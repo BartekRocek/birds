@@ -5,7 +5,7 @@ import org.example.types.activity.interfaces.Flying;
 import org.example.types.activity.interfaces.MakingNoise;
 import org.example.types.activity.interfaces.Moving;
 
-public class Bird {
+public abstract class Bird {
 
     public Flying flyingInterface;
     public MakingNoise makingNoiseInterface;
