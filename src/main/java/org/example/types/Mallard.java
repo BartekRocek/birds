@@ -10,8 +10,8 @@ public class Mallard extends Bird {
     public Mallard() {
 
         System.out.println("\nA mallard does it this way");
-        flyingInterface = new Flying();
-        makingNoiseInterface = new Quacking();
-        movingInterface = new Walking();
+        flying = new Flying();
+        makingNoise = new Quacking();
+        moving = new Walking();
     }
 }

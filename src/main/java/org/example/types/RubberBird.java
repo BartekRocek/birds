@@ -12,10 +12,10 @@ public class RubberBird extends Bird {
     public RubberBird() {
 
         System.out.println("\nA toy duck does it that way");
-        flyingInterface = new NoFlying();
-        makingNoiseInterface = new Squeaking();
-        movingInterface = new Lying();
-        makeColourInterface = new Colouring();
+        flying = new NoFlying();
+        makingNoise = new Squeaking();
+        moving = new Lying();
+        colour = new Colouring();
 
     }
 }

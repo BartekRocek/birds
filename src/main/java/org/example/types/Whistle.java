@@ -7,6 +7,6 @@ public class Whistle extends Bird {
 
     public Whistle() {
         System.out.println("\nA whistle does it like that:");
-        makingNoiseInterface = new Whistling();
+        makingNoise = new Whistling();
     }
 }

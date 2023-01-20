@@ -7,24 +7,25 @@ import org.example.types.activity.interfaces.Moving;
 
 public abstract class Bird {
 
-    public Flying flyingInterface;
-    public MakingNoise makingNoiseInterface;
-    public Moving movingInterface;
-    public Colour makeColourInterface;
+    public Flying flying;
+    public MakingNoise makingNoise;
+    public Moving moving;
+    public Colour colour;
+
 
     public String doFly() {
-        return flyingInterface.apply();
+        return flying.apply();
     }
 
     public String doMakeNoise() {
-        return makingNoiseInterface.apply();
+        return makingNoise.apply();
     }
 
     public String doMove() {
-        return movingInterface.apply();
+        return moving.apply();
     }
-    public String doColourBird(String colour) {
-        return makeColourInterface.apply(colour);
+    public String doColourBird(String rgb) {
+        return colour.apply(rgb);
     }
 
 }

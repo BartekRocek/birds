@@ -4,6 +4,11 @@ import org.example.types.Hen;
 import org.example.types.Mallard;
 import org.example.types.RubberBird;
 import org.example.types.Whistle;
+import org.example.types.activity.Colouring;
+import org.example.types.activity.Flying;
+import org.example.types.activity.NoFlying;
+import org.example.types.activity.Quacking;
+import org.example.types.activity.Walking;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +28,7 @@ public class Main {
         Bird whistle = new Whistle();
         System.out.println(whistle.doMakeNoise());
 
-        Bird hen = new Hen();
+        Bird hen = new Hen(new NoFlying(), new Quacking(), new Walking(), new Colouring());
         System.out.println(hen.doFly());
         System.out.println(hen.doMakeNoise());
         System.out.println(hen.doMove());
